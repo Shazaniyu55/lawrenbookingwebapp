@@ -14,7 +14,7 @@ function About(){
       
       <div className='max-w-[1240px] p-10 mt-20 mx-auto text-black1 relative'>
           <div className='px-4 py-12'>
-              <h3 className='text-5xl font-bold py-6 text-center'>Meet The Team.</h3>
+              <h3 className='text-3xl md:text-4xl text-black p-10 font-bold text-center lg:text-center mt-4'>Meet The Team.</h3>
               <p className='py-4 text-3xl text-slate-300 text-center'>The most convenient way to book a cleaning for your home & office.</p>
           </div>
 
