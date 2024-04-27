@@ -174,6 +174,8 @@ function Contact(){
 
 
   const [formData, setFormData] = useState({});
+  const [messageSent, setMessageSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -188,7 +190,8 @@ function Contact(){
     e.preventDefault()
     try {
       const endpoint = '/api/message'; // Update the endpoint URL
-
+      
+      setLoading(true);
       
       const response = await fetch(endpoint, {
         method: 'POST',
@@ -199,13 +202,17 @@ function Contact(){
       });
 
       if (response.ok) {
-        console.log("ok") // Reset the form state
+        // setMessageSent(true);
+        window.location.reload();
+        // Reset the form state
       } else {
         const errorData = await response.json();
         console.error(errorData);
       }
     } catch (error) {
       console.error(error);
+    }finally{
+      setLoading(false)
     }
   };
 
@@ -305,15 +312,17 @@ function Contact(){
       <div className="flex items-center justify-end">
         <button
           type="submit"
-          
+         
           className="bg-yellow text-black p-2 rounded-md hover:bg-adainyellow"
         >
-          Submit
+          {loading ? 'Submitting...' : 'Submit'}
         </button>
       </div>
     </form>
 
       </div>
+      {/* Popup */}
+      {/* {messageSent && alert('mesage sent')} */}
 
       {/* section for */}
         <section className="bg-black1 ">
