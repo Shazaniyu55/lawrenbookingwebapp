@@ -57,7 +57,7 @@ function Login(){
 
         <Alert typeof="danger" className=" bg-gray">
             If you previously booked cleaning services with us, you will receive a unique log-in link to your account. There are no passwords to set or remember.
-            </Alert>
+          </Alert>
             
            
     <form onSubmit={handleSubmit}  method='post' className='mt-12 flex flex-col gap-8'>
