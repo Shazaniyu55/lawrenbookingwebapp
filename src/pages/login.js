@@ -55,7 +55,7 @@ function Login(){
 
         </div>
 
-        <Alert typeof="danger" className=" bg-gray">
+        <Alert typeof="danger" className=" bg-gray-200">
             If you previously booked cleaning services with us, you will receive a unique log-in link to your account. There are no passwords to set or remember.
           </Alert>
             

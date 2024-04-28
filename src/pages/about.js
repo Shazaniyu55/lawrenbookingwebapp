@@ -23,7 +23,7 @@ function About(){
                   <div className='p-8'>
                       <FaPhone size={50} className='w-16 p-4 bg-black1 text-white rounded-lg mt-[-4rem]' />
                       <h3 className='font-bold text-2xl my-6'>Sales</h3>
-                      <p className='text-gray-600 text-xl'>
+                      <p className='text-gray-600 md:text-xl'>
                       Lawrencegebäudereinigung. Home & Office Cleaning is a curated online marketplace for home & office cleaning services. We work with background-checked, experienced cleaners in major European cities, including Berlin, Munich, Frankfurt and Stuttgart in Germany. Our journey started in September 2016 in Berlin, and since then we helped thousands of people in 40+ cities to find a legally-registered cleaning person for their home and office.
 
                         </p>
@@ -34,7 +34,7 @@ function About(){
                   <div className='p-8'>
                       <FaGlobe size={50} className='w-16 p-4 bg-black1 text-white rounded-lg mt-[-4rem]' />
                       <h3 className='font-bold text-2xl my-6'>Technical Support</h3>
-                      <p className='text-gray-600 text-xl'>
+                      <p className='text-gray-600 md:text-xl'>
 
                       We continuously strive to provide you with the most convenient way to get a clean & comfortable environment for your home & office. We eliminate barriers in the access to cleaning services by working with English-speaking cleaners and offering an easy & secure way to book a cleaning appointment with a quick-to-submit booking form. Our "100% satisfaction guarantee" policy gives you peace of mind when scheduling a cleaning appointment.
                       </p>
