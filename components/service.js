@@ -22,7 +22,7 @@ const ServiceCard = ({ imgSrc, title, desc }) => {
 const Services = () => {
   return (
     <section className="relative  container px-5 md:px-16 mx-auto">
-      <div className="flex gap-10 items-center flex-col-reverse lg:flex-row">
+      <div className="flex gap-10 items-center flex-col lg:flex-row">
         <div className="relative w-full flex-1">
           <img
             src='/assets/clean8.jpg'
