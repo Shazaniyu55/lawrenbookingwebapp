@@ -53,7 +53,7 @@ function Book(){
             <Layouts showNavbar={AdainNavBar} showFooter={Footer}>
                     
             <div className="grid md:grid-cols-2 gap-10 mt-20 ">
-            <div className="md:container  bg-yellow m-10 p-4">
+            <div className="md:container  bg-yellow m-10 p-4 rounded-md">
             <h1 className="text-3xl md:text-4xl font-bold text-white text-center">BOOK A CLEANING</h1>
 
                 <div className="flex justify-center items-center">
@@ -119,7 +119,7 @@ function Book(){
             </div>
 
 
-            <div className="md:container  bg-yellow m-10 p-4">
+            <div className="md:container  bg-yellow m-10 p-4 rounded-md">
             <div className="md:grid md:grid-cols-2">
 
                 {/* packages */}

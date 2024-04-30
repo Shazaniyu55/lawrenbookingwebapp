@@ -49,7 +49,7 @@ const Card = ({  title, text }) => {
         {selectedOption === "regular" ? (
         <div className=" grid sm:grid-cols-2 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 text-center mx-auto m-10 p-4">
             {/* first grid */}
-        <div className="relative container mx-auto px-5 md:px-16 flex flex-col md:gap-10 mt-10 p-8 bg-white">
+        <div className="relative container mx-auto px-5 md:px-16 flex flex-col md:gap-10 mt-10 p-8 bg-white rounded-lg">
 
         <img
           src='/assets/svg/table.svg'
@@ -74,7 +74,7 @@ const Card = ({  title, text }) => {
         </div>
 
             {/* second grid */}
-            <div className="relative container  mx-auto px-5 md:px-16 flex flex-col gap-5 mt-10 bg-white p-8">
+            <div className="relative container  mx-auto px-5 md:px-16 flex flex-col gap-5 mt-10 bg-white p-8 rounded-lg">
 
         <img
           src='/assets/svg/house.svg'
@@ -99,7 +99,7 @@ const Card = ({  title, text }) => {
             </div>
           ) : (
            
-        <div className="relative container md:w-[400px] mx-auto px-5 md:px-16 flex flex-col gap-5 mt-10 bg-white p-8">
+        <div className="relative container md:w-[400px] mx-auto px-5 md:px-16 flex flex-col gap-5 mt-10 bg-white p-8 rounded-lg">
 
          <img
           src='/assets/svg/table.svg'
