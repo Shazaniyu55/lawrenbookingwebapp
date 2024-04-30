@@ -235,7 +235,7 @@ function Contact(){
       </section>
 
       <div className='flex justify-center items-center p-10'>
-      <form onSubmit={handleSubmit}  method='post' className="w-full max-w-md mx-auto p-6 bg-white shadow-md rounded-md" action='http://localhost:2300/send-email'>
+      <form onSubmit={handleSubmit}  method='post' className="w-full max-w-md mx-auto p-6 bg-white m-4 p-4 shadow-md rounded-md" action='http://localhost:2300/send-email'>
 
       <div className="mb-4">
         <label htmlFor="fullName" className="block text-sm font-medium text-gray-600">
@@ -309,11 +309,11 @@ function Contact(){
         ></textarea>
       </div>
 
-      <div className="flex items-center justify-end">
+      <div className="flex items-center justify-center">
         <button
           type="submit"
          
-          className="bg-yellow text-black p-2 rounded-md hover:bg-adainyellow"
+          className="bg-yellow text-black p-2 m-4 rounded-md hover:bg-adainyellow"
         >
           {loading ? 'Submitting...' : 'Submit'}
         </button>

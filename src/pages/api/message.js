@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
       const {fullName, email, message, phone, city , } = req.body;
-        console.log(fullName, email, message, phone, city)
+        //console.log(fullName, email, message, phone, city)
       // Create a transporter for sending the email
        // Create a Nodemailer transporter
     let transporter = nodemailer.createTransport({

@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { postcodeValidator } from "postcode-validator";
+import {useRouter} from "next/router";
 
 const Getpostal = () => {
   const [postalCode, setPostalCode] = useState("");
   const [loading, setLoading] = useState(false);
-
+  const route = useRouter()
+  const rand = Math.random(1)
+  console.log(rand)
   const handleInputChange = (event) => {
     setPostalCode(event.target.value);
   };
@@ -16,10 +19,10 @@ const Getpostal = () => {
       // Check if the postal code is valid for the specified country code
       const isValidPostalCode = postcodeValidator(postalCode, "DE"); // Assuming DE for Germany
       if (isValidPostalCode) {
-        window.location.href = "/about";
+        route.push('/book')
       } else {
-        
-        alert(`${postalCode} Invalid postal code`);
+        route.push(`/invalid?${postalCode}:${rand}`)
+        //alert(`${postalCode} Invalid postal code`);
       }
     } catch (error) {
       console.error("Error checking postal code:", error);
