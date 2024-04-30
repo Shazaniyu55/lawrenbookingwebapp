@@ -56,11 +56,20 @@ function Book(){
             <div className="md:container  bg-yellow m-10 p-4">
             <h1 className="text-3xl md:text-4xl font-bold text-white text-center">BOOK A CLEANING</h1>
 
+                <div className="flex justify-center items-center">
+                    <img src="/broom1.png" width="50px" height="50px" alt="logo"/>
+                </div>
 
-    <div className="md:grid md:grid-cols-3">
+                <div className="flex justify-center items-center">
+                <span className="text-center">Lawrencegebäudereinigung</span>
+                </div>
 
 
-        <div className="flex items-center mb-2">
+
+           <div className="md:grid md:grid-cols-3">
+
+
+        <div className="flex items-center mb-2 mt-10">
                 <input
                         type="radio"
                         value="one-time"
@@ -72,7 +81,7 @@ function Book(){
                     </div>
 
 
-                    <div className="flex items-center mb-2">
+            <div className="flex items-center mb-2 mt-10">
           <input
             type="radio"
             value="basic"
@@ -86,7 +95,7 @@ function Book(){
 
 
 
-        <div className="flex items-center">
+        <div className="flex items-center mb-2 mt-10">
           <input
             type="radio"
             value="regular"
