@@ -177,16 +177,21 @@ function Book(){
 
         <span>Select number of cleaners 1X</span>
 
-        {/* button for increment */}
-        <div className="flex justify-start items-end">
-            <button onClick={increment} className="bg-black py-3 px-8 rounded-md outline-none w-40 text-white">+</button>
-        </div>
+        <div className="flex items-center gap-4">
+                                <button
+                                    className="group rounded-md w-20 border border-black shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-yellow hover:bg-yellow hover:border-yellow focus-within:outline-gray-300">
+                                      
 
-            
-            {/* button for decrement */}
-        <div className="flex justify-start items-end">
-            <button onClick={increment} className="bg-black py-3 px-8 rounded-md outline-none w-40 text-white">-</button>
-        </div>
+                                      +
+
+
+                                </button>
+                               
+                                <button
+                                    className="group rounded-md w-20 border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
+                                   -
+                                </button>
+                            </div>
 
           </div>
 
