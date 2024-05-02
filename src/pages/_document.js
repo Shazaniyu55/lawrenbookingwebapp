@@ -8,9 +8,9 @@ export default function Document() {
      
 
       <Head>
-      <title>Lawrencegebäudereinigung</title>
-      <meta name="Lawrencegebäudereinigung logo" content="Lawrencegebäudereinigung offers professional home cleaning services with a focus on people, technologies, and possibilities. Contact us for a sparkling clean home."/>
-      <link rel="Lawrencegebäudereinigung logo" href="/favicon.ico" />
+      <title>Lawrencegebaudereinigung</title>
+      <meta name="Lawrencegebaudereinigung logo" content="Lawrencegebaudereinigung offers professional home cleaning services with a focus on people, technologies, and possibilities. Contact us for a sparkling clean home."/>
+      <link rel="Lawrencegebaudereinigung logo" href="/favicon.ico" />
       </Head>
       
 
