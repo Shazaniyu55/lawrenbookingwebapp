@@ -77,7 +77,7 @@ function Book(){
             <>
             <Layouts showNavbar={AdainNavBar} showFooter={Footer}>
                     
-            <div className="md:grid grid-cols-2 gap-10 mt-20">
+            <div className="md:grid grid-cols-2 p-4 m-8 gap-10 mt-20">
             <div className="md:container  bg-yellow m-10 p-4 rounded-md">
             <h1 className="text-3xl md:text-4xl font-bold text-white text-center">BOOK A CLEANING</h1>
 
@@ -98,7 +98,7 @@ function Book(){
                 </div>
 
 
-           <div className="md:grid gap-8 md:grid-cols-3">
+      <div className="lg:grid gap-8 lg:grid-cols-3 ">
 
 
         <div className="flex items-center mb-2 mt-10">
@@ -111,11 +111,11 @@ function Book(){
                         onChange={() => updatePrice('one-time')}
                         className="mr-2"
                     />
-                    <label htmlFor="one-time">One-time Cleaning</label>
+                    <label htmlFor="one-time" className="text-center">One-time Cleaning</label>
 
 
 
-                    <p>
+                    <p className="text-center">
                         On-demand cleaning service<br/>
                         <span>PRICE PER CLEANER</span>
                     </p>
@@ -127,7 +127,7 @@ function Book(){
 
 
         <div className="flex items-center mb-2 mt-10">
-        <div className="relative container md:w-[400px]  flex flex-col gap-5  bg-white p-8 rounded-lg">
+        <div className="relative container flex flex-col gap-5  bg-white p-8 rounded-lg">
 
           <input
             type="radio"
@@ -136,9 +136,9 @@ function Book(){
             onChange={() => updatePrice('basic')}
             className="mr-2"
           />
-          <label htmlFor="basic">Basic Cleaning</label>
+          <label htmlFor="basic" className="text-center">Basic Cleaning</label>
 
-          <p>
+          <p className="text-center">
             On-demand cleaning service<br/>
             <span>PRICE PER CLEANER</span>
           </p>
@@ -152,7 +152,7 @@ function Book(){
 
 
         <div className="flex items-center mb-2 mt-10">
-        <div className="relative container md:w-[400px]  flex flex-col gap-5  bg-white p-8 rounded-lg">
+        <div className="relative container flex flex-col gap-5  bg-white p-8 rounded-lg">
 
           <input
             type="radio"
@@ -161,9 +161,9 @@ function Book(){
             onChange={() => updatePrice('regular')}
             className="mr-2"
           />
-          <label htmlFor="regular">Regular Cleaning</label>
+          <label htmlFor="regular" className="text-center">Regular Cleaning</label>
 
-          <p>
+          <p className="text-center">
             On-demand cleaning service<br/>
             <span>PRICE PER CLEANER</span>
           </p>
@@ -180,12 +180,8 @@ function Book(){
         <div className="flex items-center gap-4">
                                 <button
                                     className="group rounded-md w-20 border border-black shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-yellow hover:bg-yellow hover:border-yellow focus-within:outline-gray-300">
-                                      
-
                                       +
-
-
-                                </button>
+                                      </button>
                                
                                 <button
                                     className="group rounded-md w-20 border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
@@ -197,14 +193,15 @@ function Book(){
 
 
           {/* calender and time div */}
-          <div>
-
+          <div className="p-4 m-4">
+            <input type="date"/>
             {/* <DateRange
                     editableDateInputs={true}
                     onChange={(item) => setDate([item.selection])}
                     moveRangeOnFirstSelection={false}
                     ranges={date}
-                    className="date"
+                    className="w-40"
+                    
                     minDate={new Date()}
                   /> */}
 
@@ -226,7 +223,7 @@ function Book(){
         First Name
       </label>
       <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane"/>
-      <p className="text-red-500 text-xs italic">Please fill out this field.</p>
+
     </div>
     <div className="w-full md:w-1/2 px-3">
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
@@ -238,10 +235,9 @@ function Book(){
   <div className="flex flex-wrap -mx-3 mb-6">
     <div className="w-full px-3">
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-        Password
+        Company
       </label>
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************"/>
-      <p className="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
+      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="company" type="text" placeholder="Company"/>
     </div>
   </div>
   <div className="flex flex-wrap -mx-3 mb-2">
@@ -293,8 +289,8 @@ function Book(){
             </div>
 
 
-            <div className="md:container  bg-yellow m-10 p-4 rounded-md  ">
-            <div className="md:grid md:grid-cols-2 ">
+            <div className="md:container w-[20px] bg-yellow m-10 p-4 rounded-md  ">
+            <div className="md:grid  md:grid-cols-2 ">
 
                 {/* packages */}
                 <div>
