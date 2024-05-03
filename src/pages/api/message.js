@@ -56,8 +56,8 @@ export default async function handler(req, res) {
           <div class="container">
               <p>Name: ${fullName}</p>
               <p>Email: ${email}</p>
-              <p>Email: ${phone}</p>
-              <p>Email: ${city}</p>
+              <p>Phone: ${phone}</p>
+              <p>City: ${city}</p>
               <p>Message: ${message}</p>
           </div>
       `
