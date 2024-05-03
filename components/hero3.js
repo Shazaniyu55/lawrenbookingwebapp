@@ -44,12 +44,12 @@ function Hero3(){
                 <Card
                   imgSrc='/assets/svg/phone.svg'
                   title="VIA PHONE"
-                  desc="Get in contact with us via phone by calling +49 163 444 2043 where are always available by 8 am - 6 pm (Monday - Sunday)"
+                  desc="Get in contact with us via phone by calling +49 163 444 2034 where are always available by 8 am - 6 pm (Monday - Sunday)"
                 />
                 <Card
                   imgSrc='/assets/svg/email.svg'
                   title="VIA EMAIL"
-                  desc="Get in contact with us via email by sending a mail to info@spicandspan.de where are always available 24/7 (every day)"
+                  desc="Get in contact with us via email by sending a mail to lawrencefabian297@yahoo.com where are always available 24/7 (every day)"
                 />
 
                 <Card
