@@ -35,7 +35,7 @@ export default async function handler(req, res) {
   let mailOptions = {
       from: 'shaazaniyu@gmail.com', // Sender address
       to: ' shazaniyu@gmail.com , lawrencefabian297@yahoo.com', // List of recipients
-      subject: 'Fabian Family ', // Subject line
+      subject: 'Lawrencegebäudereinigung Family ', // Subject line
       // text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`, // Plain text body
       // HTML body with a picture and CSS styles
       html: `
