@@ -6,8 +6,8 @@ const Getpostal = () => {
   const [postalCode, setPostalCode] = useState("");
   const [loading, setLoading] = useState(false);
   const route = useRouter()
-  const rand = Math.random(1)
-  console.log(rand)
+  // const rand = Math.random(1)
+  // console.log(rand)
   const handleInputChange = (event) => {
     setPostalCode(event.target.value);
   };
